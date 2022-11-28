@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "cca0f7bc-996f-415f-8f2b-dee7655fdc69",
+		"name": "Bills",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24517363"
+	},
+	"item": [
+		{
+			"name": "Get bills",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/bills/?client_name=&client_org=",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"bills",
+						""
+					],
+					"query": [
+						{
+							"key": "client_name",
+							"value": ""
+						},
+						{
+							"key": "client_org",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Parse bills",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/ou170/Desktop/bills.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/bills/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"bills",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
