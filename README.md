@@ -1,6 +1,6 @@
 ## Bills
 
-[Postman collection](Tinder.postman_collection.json) for API
+[Postman collection](Bills.postman_collection.json) for API
 
 ### Installation
 
